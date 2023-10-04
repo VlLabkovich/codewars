@@ -5,9 +5,8 @@
 
 // SOLUTION:
 
-function arrayPlusArray(arr1, arr2) {
-    const sumArr = [].concat(arr1, arr2)
-    return sumArr.reduce((arr1, arr2) => arr1 + arr2)
+function arrayPlusArray(arr1, arr2) { 
+    return [].concat(arr1, arr2).reduce((arr1, arr2) => arr1 + arr2);
 }
 
 console.log(arrayPlusArray([5,2,3], [1,3,6]));
