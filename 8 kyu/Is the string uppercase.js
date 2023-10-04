@@ -17,17 +17,12 @@
 
 // SOLUTION:
 
-String.prototype.isUpperCase = function() {
-    let a = Object.values(this).join('')
-    
-    let isStringUpperCase = false;
+String.prototype.isUpperCase = function () {
 
-    if (a.toUpperCase() === a ) {
-        isStringUpperCase = true;
-    } else {
-        isStringUpperCase = false
-    }
-     return isStringUpperCase; 
+    const a = Object.values(this).join('');
+
+    return a.toUpperCase() === a ? true : false;
+
 }
 
 console.log('c'.isUpperCase());
