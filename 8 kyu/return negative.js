@@ -7,6 +7,6 @@
 // SOLUTION:
 
 function makeNegative(num) {
-    return num === 0 ? Math.abs(num) : -Math.abs(num);
+    return num === 0 ? num : -Math.abs(num);
 }
 console.log(makeNegative(-22));
