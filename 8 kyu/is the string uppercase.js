@@ -16,3 +16,18 @@
 // In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
 
 // SOLUTION:
+
+String.prototype.isUpperCase = function () {
+
+    const a = Object.values(this).join('');
+
+    return a.toUpperCase() === a ? true : false;
+
+}
+
+console.log('c'.isUpperCase());
+console.log('C'.isUpperCase());
+console.log('hello I AM DONALD'.isUpperCase());
+console.log('HELLO I AM DONALD'.isUpperCase());
+console.log('ACSKLDFJSgSKLDFJSKLDFJ'.isUpperCase());
+console.log('ACSKLDFJSGSKLDFJSKLDFJ'.isUpperCase());
