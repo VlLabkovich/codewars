@@ -6,3 +6,10 @@
 // If you can, try writing it in one line of code.
 
 // SOLUTION:
+
+function findDifference(a, b) {
+  const findDiff =  a.reduce((el, cur) => el * cur) - b.reduce((el, cur) => el * cur);
+  return findDiff === -Math.abs(findDiff) ? Math.abs(findDiff) : findDiff;
+}
+
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
