@@ -5,3 +5,8 @@
 //  - Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
 // SOLUTION:
+
+function makeNegative(num) {
+    return num === 0 ? num : -Math.abs(num);
+}
+console.log(makeNegative(-22));
