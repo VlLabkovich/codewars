@@ -11,3 +11,9 @@
 // ("-++-", "-+-+") ➞ "-+00"
 
 // SOLUTION:
+
+function neutralise(s1, s2) {
+    return s1.split('').reduce((acc, cur, index)=> acc+=cur === s2[index] ? cur : 0,'');
+}
+
+console.log(neutralise("++--++", "--++--"));
