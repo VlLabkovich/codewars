@@ -4,3 +4,8 @@
 // Return true if yes, false otherwise :)
 
 // SOLUTION:
+function hero(bullets, dragons){
+    return bullets === dragons * 2 || dragons * 2 < bullets ? true : false;
+}
+
+console.log(hero(10, 4));
