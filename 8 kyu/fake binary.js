@@ -3,3 +3,9 @@
 // Note: input will never be an empty string.
 
 // SOLUTION:
+
+function fakeBin(x){
+    return [...x].map(el => el < 5? el = 0 : el = 1).join('')
+   }
+   
+   console.log(fakeBin('45385593107843568'))
