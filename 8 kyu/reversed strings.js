@@ -4,3 +4,7 @@
 // 'word'   =>  'drow'
 
 // SOLUTION:
+
+const reversString = (str) => str.split('').reverse().join("");
+
+console.log(reversString('world'));
