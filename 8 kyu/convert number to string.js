@@ -7,3 +7,7 @@
 // -100 --> "-100"
 
 // SOLUTION:
+
+const numberToString = num => String(num);
+
+console.log(numberToString(55));
