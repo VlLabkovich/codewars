@@ -7,3 +7,7 @@
 // mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 
 // SOLUTION:
+
+const mango = (quantity, price) => (quantity - Math.floor(quantity/3)) * price;
+
+console.log(mango(9, 5));
