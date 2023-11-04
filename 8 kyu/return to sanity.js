@@ -3,10 +3,6 @@
 
 // SOLUTION:
 
-function mystery() {
-    var results =
-      {sanity: 'Hello'};
-    return results;
-  }
+const mystery = () => results = {sanity: 'Hello'};
 
-  console.log(mystery());
+console.log(mystery());
