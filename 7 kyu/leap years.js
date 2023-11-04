@@ -6,3 +6,7 @@
 // Tested years are in range 1600 ≤ year ≤ 4000.
 
 // SOLUTION:
+
+const isLeapYear = year => ((year % 4 === 0) === (year % 400 === 0) === (year % 100 === 0))? true : false;
+
+console.log(isLeapYear(2000));
