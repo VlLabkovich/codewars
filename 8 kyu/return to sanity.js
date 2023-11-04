@@ -6,8 +6,7 @@
 function mystery() {
     var results =
       {sanity: 'Hello'};
-    return
-      results;
+    return results;
   }
 
   console.log(mystery());
