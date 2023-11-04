@@ -7,3 +7,8 @@
 // Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.
 
 // SOLUTION:
+
+const periodIsLate = (last, today, cycleLength) => ((today - last)/86400000) > cycleLength ? true : false;
+
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 28));
