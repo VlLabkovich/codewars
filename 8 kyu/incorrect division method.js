@@ -3,6 +3,6 @@
 
 // SOLUTION:
 
-const solve = (x, y) => x // y;
+const solve = (x, y) => x / y;
 
 console.log(solve(10, 5));
