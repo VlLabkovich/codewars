@@ -6,10 +6,12 @@
 // SOLUTION:
 
 function checkAlive (health) {
-    if () {
-      health < 0
+    if (health <= 0) {
       return false
-    } else () {
+    } else {
       return true
     }
   }
+
+  console.log(checkAlive(5));
+  console.log(checkAlive(0));
