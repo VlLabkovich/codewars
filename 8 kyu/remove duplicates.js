@@ -3,3 +3,7 @@
 // The order of the sequence has to stay the same.
 
 // SOLUTION:
+
+const distinct = a => ([...new Set(a)]);
+
+console.log(distinct([1, 2, 1, 1, 3, 2]));
