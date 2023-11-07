@@ -7,3 +7,10 @@
 // Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).
 
 // SOLUTION:
+
+function pillars(numPill, dist, width) {
+    return numPill == 1 ? dist * 0 : ((dist*100) * (numPill-1)) + ((numPill-2)* width);     
+}
+
+console.log(pillars(1, 10, 10));
+console.log(pillars(11, 15, 30));
