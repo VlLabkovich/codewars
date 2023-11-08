@@ -4,10 +4,6 @@
 
 // SOLUTION:
 
-String.prototype.toAlternatingCase = function () {
-    let objStr = Object.values(this);
-    let newArr = objStr.map((el) => el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase());
-    return newArr.join('');
-}
+String.prototype.toAlternatingCase = function () {return (Object.values(this).map((el) => el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase())).join('');}
 
 console.log("hElLo WoRlD".toAlternatingCase());
