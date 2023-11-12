@@ -7,3 +7,7 @@
 // They will not contain numerals.
 
 // SOLUTION:
+
+const feast = (beast, dish) => beast.split('').shift() === dish.split('').shift() && beast.split('').pop() === dish.split('').pop() ? true : false;
+
+console.log(feast("great blue heron", "garlic naan"));
