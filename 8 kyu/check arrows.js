@@ -6,3 +6,11 @@
 // The expected result is a boolean, indicating whether you have any good arrows left.
 
 // SOLUTION:
+
+function anyArrows(arrows) {
+    return arrows.some(el => !el.damaged); 
+  }
+
+console.log(anyArrows([]));
+console.log(anyArrows([{range: 5}, {range: 10, damaged: true}, {damaged: true}]));
+console.log(anyArrows([{range: 10, damaged: true}, {damaged: true}]));
