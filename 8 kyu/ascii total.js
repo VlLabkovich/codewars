@@ -5,3 +5,13 @@
 // uniTotal("aaa") == 291
 
 // SOLUTION:
+
+function uniTotal(string) {
+    let resultSum = 0;
+    for (let i = 0; i < string.length; i++) {
+        resultSum += string.charCodeAt(i)
+    }
+    return resultSum;
+}
+
+console.log(uniTotal("aaa"));
