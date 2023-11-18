@@ -11,3 +11,11 @@
 // age = 17   =>   15-20
 
 // SOLUTION:
+
+function datingRange(age){
+    let min = age <= 14 ? age - 0.10 * age : age / 2 + 7;
+    let max = age <= 14 ? age + 0.10 * age : (age - 7)*2;
+    return `${Math.floor(min)}-${Math.floor(max)}`;
+  }
+
+  console.log(datingRange(27));
